@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">
+            <span class="font-semibold text-green-600">25 din me</span>
+            <span class="font-semibold text-sky-600">paisa</span>
+            <span class="font-semibold text-indigo-600">double and triple!!!</span>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-16">
+                <div class="bg-green-400	 p-5 rounded-3xl text-center text-white">
+                    <h4 class="text-3xl font-semibold">cash your double paisa</h4>
+                    <h2 class="text-5xl">$<span id="double-total">00</span></h2>
+                </div>
+                <div class="bg-sky-400 p-5 rounded-3xl text-center text-white">
+                    <h4 class="text-3xl font-semibold">cash your triple paisa</h4>
+                    <h2 class="text-5xl">$<span id="triple-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-16">
+                <div class="bg-emerald-600 p-5 rounded-xl">
+                    <h4 class="text-3xl font-semibold text-white">Both Scheme</h4>
+
+                    <input class="w-9/12 block mt-5 mb-5 px-3 text-black" type="text" name="" id="both-input"
+                        placeholder="$ amount to double and triple">
+                    <button id="btn-both"
+                        class="bg-white hover:bg-emerald-100 px-8 py-2 rounded-lg text-emerald-600 font-medium">Cash on
+                        both</button>
+
+                </div>
+                <div class="bg-rose-600 p-5 rounded-xl">
+                    <h4 class="text-3xl font-semibold text-white">Only Double Scheme</h4>
+
+                    <input class="w-9/12 block mt-5 mb-5 px-3 text-black" type="text" name="" id="double-input"
+                        placeholder="$ amount you want to double">
+
+                    <button id="btn-double"
+                        class="bg-white hover:bg-rose-100 px-8 py-2 rounded-lg text-rose-600 font-medium">Cash on
+                        double</button>
+
+                </div>
+                <div class="bg-indigo-600 p-5 rounded-xl">
+                    <h4 class="text-3xl font-semibold text-white">Only Triple Scheme</h4>
+
+                    <input class="w-9/12 block mt-5 mb-5 px-3 text-black" type="text" name="" id="triple-input"
+                        placeholder="$ amount you want to triple">
+
+                    <button id="btn-triple"
+                        class="bg-white hover:bg-indigo-100 px-8 py-2 rounded-lg text-indigo-600 font-medium">Cash on
+                        triple</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/function.js"></script>
+
+</body>
+
+</html>
