@@ -1,3 +1,11 @@
+
+function getNoNumber(inputValue) {
+    if (isNaN(inputValue)) {
+        alert("Please put here a valid number");
+        return;
+    }
+}
+
 function getInputFieldValueById(inputFieldId) {
     const inputField = document.getElementById(inputFieldId);
     const inputFieldValueString = inputField.value;
@@ -19,7 +27,7 @@ function setTextElementValueById(elementFieldId, newValue) {
 }
 
 document.getElementById("btn-both").addEventListener("click", function () {
-    const newAmount = getInputFieldValueById("both-input");
+    const newAmount = getInputFieldValueById(getNoNumber("both-input"));
     const previousDoubleTotal = getElementValueById("double-total");
     const newDoubleTotal = previousDoubleTotal + (newAmount * 2);
     setTextElementValueById("double-total", newDoubleTotal);
@@ -29,14 +37,14 @@ document.getElementById("btn-both").addEventListener("click", function () {
 })
 
 document.getElementById("btn-double").addEventListener("click", function () {
-    const newDoubleAmount = getInputFieldValueById("double-input");
+    const newDoubleAmount = getInputFieldValueById(getNoNumber("double-input"));
     const previousDoubleTotal = getElementValueById("double-total");
     const newDoubleTotal = previousDoubleTotal + (newDoubleAmount * 2);
     setTextElementValueById("double-total", newDoubleTotal);
 })
 
 document.getElementById("btn-triple").addEventListener("click", function () {
-    const newTripleAmount = getInputFieldValueById("triple-input");
+    const newTripleAmount = getInputFieldValueById(getNoNumber("triple-input"));
     const previousTripleTotal = getElementValueById("triple-total");
     const newTripleTotal = previousTripleTotal + (newTripleAmount * 3);
     setTextElementValueById("triple-total", newTripleTotal);
